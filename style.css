@@ -103,6 +103,13 @@ hr{
   box-shadow: 2px 2px 12px #3e3e3e;
 }
 
+footer{
+  font-size: 0.7rem;
+  line-height: 0.2rem;
+}
+
+
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1200px){
