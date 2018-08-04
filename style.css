@@ -69,17 +69,17 @@ hr{
   border-radius: 80px;
   background-color: #fff500;
   margin: 1rem;
-
+  transition: all 0.6s ease;
 }
 
 .select-choice:hover{
-  background-color: #fb4b53;
+  background-color: #ff8a00;
   cursor: pointer;
 }
 
 .result{
   font-size: 1.7rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .total-score{
