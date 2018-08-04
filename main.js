@@ -11,14 +11,38 @@ const paperDiv = document.getElementById("paper");
 const scissorsDiv = document.getElementById("scissors");
 
 
-const computerChoice = () => {
-  const listChoices = ["rock", "paper", "scissors"]
-  const randomChoice = listChoices[Math.floor(Math.random()*3)];
-  // console.log(randomChoice)
+// Generating computer choice at random
+const getComputerChoice = () => {
+  const choiceList = ["rock", "paper", "scissors"]
+  const randomNumber = Math.floor(Math.random()*3);
+  return (choiceList[randomNumber]);
 }
 
+
+// Comparing computerChoice and userChoice
 const game = (userChoice) => {
-  console.log(userChoice);
+  const computerChoice = getComputerChoice();
+
+  switch(userChoice + computerchoice) {
+    case "paperrock":
+    case "rockscissors":
+    case "scissorspaper":
+      console.log("USER WINS")
+      break;
+
+    case "rockpaper":
+    case "scissorsrock":
+    case "paperscissors":
+      console.log("COMPUTER WINS")
+      break;
+
+    case "rockrock":
+    case "paperpaper":
+    case "scissorsscissors":
+      console.log("TIE")
+      break;
+  }
+
 }
 
 const main = () => {
@@ -35,5 +59,4 @@ const main = () => {
   })
 }
 
-main();
-computerChoice();
+game();
