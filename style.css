@@ -108,6 +108,10 @@ footer{
   line-height: 0.2rem;
 }
 
+.icons{
+  max-width: 20px;
+  height: auto;
+}
 
 
 /* MEDIA QUERIES */
