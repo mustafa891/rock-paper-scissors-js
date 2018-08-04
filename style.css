@@ -73,7 +73,7 @@ hr{
 }
 
 .select-choice:hover{
-  background-color: #ff8a00;
+  background-color: #a6a6a6;
   cursor: pointer;
 }
 
@@ -87,6 +87,23 @@ hr{
 }
 
 
+.win-border {
+  border: 5px solid #3bff00;
+  box-shadow: 2px 2px 12px #3e3e3e;
+}
+
+.lose-border{
+  border: 5px solid #ff0000;
+  box-shadow: 2px 2px 12px #3e3e3e;
+
+}
+
+.tie-border{
+  border: 5px solid #464647;
+  box-shadow: 2px 2px 12px #3e3e3e;
+}
+
+/* MEDIA QUERIES */
 
 @media (max-width: 1200px){
   #inside{
