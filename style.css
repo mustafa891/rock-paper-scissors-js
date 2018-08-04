@@ -13,15 +13,34 @@ body{
   font-size: 1.2rem;
 }
 
+.container{
+  padding: 10vh 10vw;
+}
+
+#inside{
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  background-color: #e2e2e2;
+  border: 10px solid #e2e2e2;
+  border-radius: 25px;
+}
+
 
 h1{
-  font-size: 3rem;
+  font-size: 3.2rem;
   margin-top: -2vh;
   margin-bottom: 0;
 }
 
 p{
   color: #000000;
+}
+
+hr{
+  width: 50%;
+  background-color: ;
+
 }
 
 #title{
@@ -35,20 +54,8 @@ p{
   margin-bottom: 0;
 }
 
-.container{
-  padding: 10vh 10vw;
-}
-
-#inside{
-  margin: auto;
-  width: 50%;
-  height: 50%;
-  background-color: #f4f4f4;
-  border-radius: 25px;
-}
-
 .img-weapon{
-  max-width: 120px;
+  max-width: 110px;
   height: auto
 }
 
@@ -60,9 +67,14 @@ p{
   display: inline-block;
   border: 5px solid #000000;
   border-radius: 80px;
-  background-color: #CFADD9;
-  margin: 2rem;
+  background-color: #fff500;
+  margin: 1rem;
 
+}
+
+.select-choice:hover{
+  background-color: #fb4b53;
+  cursor: pointer;
 }
 
 .result{
@@ -72,4 +84,63 @@ p{
 
 .total-score{
   line-height: 0.5rem;
+}
+
+
+
+@media (max-width: 1200px){
+  #inside{
+    width: 65%;
+    height: 65%;
+  }
+}
+
+@media (max-width: 992px){
+
+  #inside{
+    width: 70%;
+    height: 70%;
+  }
+
+  .img-weapon{
+    max-width: 95px;
+    height: auto
+  }
+
+  .select-choice{
+    margin: 1vh 1vw;
+  }
+
+}
+
+@media (max-width: 768px){
+  #inside{
+    width: 80%;
+    height: 80%;
+  }
+
+  .img-weapon{
+    max-width: 75px;
+    height: auto
+  }
+
+  .select-choice{
+    margin: 1vh 1vw;
+  }
+}
+
+@media (max-width: 576px){
+  #inside{
+    width: 90%;
+    height: 90%;
+  }
+
+  .img-weapon{
+    max-width: 60px;
+    height: auto
+  }
+
+  .select-choice{
+    margin: 1vh 1vw;
+  }
 }
