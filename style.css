@@ -1,4 +1,74 @@
+* {
+  border: 1px solid red;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+
+h1{
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p{
+  color: #000000;
+}
+
+#title{
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#instruction{
+  font-size: 1.5rem;
+  margin: 1vh 0;
+}
+
+.container{
+  padding: 10vh 10vw;
+}
+
+#inside{
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  background-color: #f4f4f4;
+  border-radius: 25px;
+}
+
 .img-weapon{
   max-width: 120px;
   height: auto
+}
+
+.choice{
+  margin: auto;
+}
+
+.select-choice{
+  display: inline-block;
+  border: 5px solid #000000;
+  border-radius: 80px;
+  background-color: #CFADD9;
+  margin: 2rem;
+
+}
+
+.result{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.total-score{
+
 }

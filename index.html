@@ -6,29 +6,43 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <h1>Play Rock Paper Scissors</h1>
-    </header>
     <div class="container">
-      <div class="choice"></div>
-        <div class="select-choice">
-          <img class="img-weapon" src="./img/rock.png" alt="Selection - rock">
-        </div>
-        <div class="select-choice">
-          <img class="img-weapon" src="./img/paper.png" alt="Selection - paper">
-        </div>
-        <div class="select-choice">
-          <img class="img-weapon" src="./img/scissors.png" alt="Selection - scissors">
+
+
+
+
+      <div id="inside">
+        <header>
+          <p id="title">Play</p>
+          <h1>Rock Paper Scissors</h1>
+          <hr>
+        </header>
+
+        <p id="instruction">Select your ammo:</p>
+
+        <div class="choice">
+          <div class="select-choice" id="rock">
+            <img class="img-weapon" src="./img/rock.png" alt="Selection - rock">
+          </div>
+          <div class="select-choice" id="paper">
+            <img class="img-weapon" src="./img/paper.png" alt="Selection - paper">
+          </div>
+          <div class="select-choice" id="scissors">
+            <img class="img-weapon" src="./img/scissors.png" alt="Selection - scissors">
+          </div>
         </div>
 
-      <div class="result">
-        <p>Rock smashes scissors. You win!</p>
-      </div>
 
-      <div class="scores">
-        <p>Your score: <span id="user-score">0</span></p>
-        <p>Computer's score: <span id="computer-score">0</span></p>
-        <p>You're winning!</p>
+        <div class="result">
+          <p>Rock smashes scissors. You win!</p>
+        </div>
+
+        <div class="scores">
+          <p class="total-score">Your score: <span id="user-score">0</span></p>
+          <p class="total-score">Computer's score: <span id="computer-score">0</span></p>
+          <p id="total">You're winning!</p>
+        </div>
+
       </div>
     </div>
   </body>
