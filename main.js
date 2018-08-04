@@ -40,9 +40,10 @@ const win = (userChoice, computerChoice) => {
   userScore++;
   userScoreSpan.innerHTML = userScore;
   const randomWin = ["beats", "smashes", "destroys", "obliterates"];
+  const randomNumber = Math.floor(Math.random() * 4);
   const winEmojis = ["😁", "💃🏽", "👏🏽", "😅", "😎", "🙌🏽"]
-  const randomNumber = Math.floor(Math.random() * 3);
-  resultDiv.innerHTML = `${convertToUp(userChoice)} ${randomWin[randomNumber]} ${convertToUp(computerChoice)}. You win! ${winEmojis[randomNumber]}`;
+  const randomNumberEmoji = Math.floor(Math.random() * 6);
+  resultDiv.innerHTML = `${convertToUp(userChoice)} ${randomWin[randomNumber]} ${convertToUp(computerChoice)}. You win! ${winEmojis[randomNumberEmoji]}`;
 };
 
 // Output for user lose / computer win
@@ -50,17 +51,18 @@ const lose = (userChoice, computerChoice) => {
   computerScore++
   computerScoreSpan.innerHTML = computerScore;
   const randomWin = ["beats", "smashes", "destroys", "obliterates"];
-  const loseEmojis = ["😩", "😾", "💩", "😭", "😡", "🤨"]
-  const randomNumber = Math.floor(Math.random() * 3);
-  resultDiv.innerHTML = `${convertToUp(computerChoice)} ${randomWin[randomNumber]} ${convertToUp(userChoice)}. You lose! ${loseEmojis[randomNumber]}`;
+  const randomNumber = Math.floor(Math.random() * 4);
+  const loseEmojis = ["😩", "😾", "💩", "😭", "😡", "🤨", "🤦🏽‍♀️"]
+  const randomNumberEmoji = Math.floor(Math.random() * 7);
+  resultDiv.innerHTML = `${convertToUp(computerChoice)} ${randomWin[randomNumber]} ${convertToUp(userChoice)}. You lose! ${loseEmojis[randomNumberEmoji]}`;
 
 };
 
 // Output for tie
 const tie = (userChoice, computerChoice) => {
-  const tieEmojis = ["😩", "😾", "💩", "😭", "😡", "🤨"]
-  const randomNumber = Math.floor(Math.random() * 3);
-  resultDiv.innerHTML = `${convertToUp(computerChoice)} matches ${convertToUp(userChoice)}. It's a tie! ${tieEmojis[randomNumber]}`;
+  const tieEmojis = ["🤯", "😱", "🙈", "🧐", "🙀", "🙃"]
+  const randomNumberEmoji = Math.floor(Math.random() * 6);
+  resultDiv.innerHTML = `${convertToUp(computerChoice)} matches ${convertToUp(userChoice)}. It's a tie! ${tieEmojis[randomNumberEmoji]}`;
 };
 
 
