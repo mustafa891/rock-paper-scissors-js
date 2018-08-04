@@ -5,7 +5,6 @@ const userScoreSpan = document.getElementById("user-score");
 const computerScoreSpan = document.getElementById("computer-score");
 const scoresDiv = document.querySelector(".scores");
 const resultDiv = document.querySelector(".result > p");
-const totalP = document.querySelector("total");
 
 const rockDiv = document.getElementById("rock");
 const paperDiv = document.getElementById("paper");
@@ -41,8 +40,9 @@ const win = (userChoice, computerChoice) => {
   userScore++;
   userScoreSpan.innerHTML = userScore;
   const randomWin = ["beats", "smashes", "destroys", "obliterates"];
+  const winEmojis = ["😁", "💃🏽", "👏🏽", "😅", "😎", "🙌🏽"]
   const randomNumber = Math.floor(Math.random() * 3);
-  resultDiv.innerHTML = `${convertToUp(userChoice)} ${randomWin[randomNumber]} ${convertToUp(computerChoice)}. You win!`;
+  resultDiv.innerHTML = `${convertToUp(userChoice)} ${randomWin[randomNumber]} ${convertToUp(computerChoice)}. You win! ${winEmojis[randomNumber]}`;
 };
 
 // Output for user lose / computer win
@@ -50,19 +50,18 @@ const lose = (userChoice, computerChoice) => {
   computerScore++
   computerScoreSpan.innerHTML = computerScore;
   const randomWin = ["beats", "smashes", "destroys", "obliterates"];
+  const loseEmojis = ["😩", "😾", "💩", "😭", "😡", "🤨"]
   const randomNumber = Math.floor(Math.random() * 3);
-  resultDiv.innerHTML = `${convertToUp(computerChoice)} ${randomWin[randomNumber]} ${convertToUp(userChoice)}. You lose!`;
+  resultDiv.innerHTML = `${convertToUp(computerChoice)} ${randomWin[randomNumber]} ${convertToUp(userChoice)}. You lose! ${loseEmojis[randomNumber]}`;
 
 };
 
 // Output for tie
 const tie = (userChoice, computerChoice) => {
-  resultDiv.innerHTML = `${convertToUp(computerChoice)} matches ${convertToUp(userChoice)}. It's a tie!`;
-}
-
-//Output for total
-
-
+  const tieEmojis = ["😩", "😾", "💩", "😭", "😡", "🤨"]
+  const randomNumber = Math.floor(Math.random() * 3);
+  resultDiv.innerHTML = `${convertToUp(computerChoice)} matches ${convertToUp(userChoice)}. It's a tie! ${tieEmojis[randomNumber]}`;
+};
 
 
 
