@@ -10,8 +10,15 @@ const rockDiv = document.getElementById("rock");
 const paperDiv = document.getElementById("paper");
 const scissorsDiv = document.getElementById("scissors");
 
+
+const computerChoice = () => {
+  const listChoices = ["rock", "paper", "scissors"]
+  const randomChoice = listChoices[Math.floor(Math.random()*3)];
+  // console.log(randomChoice)
+}
+
 const game = (userChoice) => {
-  console.log("poop" + userChoice);
+  console.log(userChoice);
 }
 
 const main = () => {
@@ -29,3 +36,4 @@ const main = () => {
 }
 
 main();
+computerChoice();
