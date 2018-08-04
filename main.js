@@ -47,7 +47,7 @@ const win = (userChoice, computerChoice) => {
   resultDiv.innerHTML = `${convertToUp(userChoice)} ${randomWin[randomNumber]} ${convertToUp(computerChoice)}. You win! ${winEmojis[randomNumberEmoji]}`;
 
   document.getElementById(userChoice).classList.add('win-border')
-  setTimeout(function(){document.getElementById(userChoice).classList.remove('win-border')}, 600)
+  setTimeout(() => document.getElementById(userChoice).classList.remove('win-border'), 600)
 };
 
 // Output for user lose / computer win
@@ -61,7 +61,7 @@ const lose = (userChoice, computerChoice) => {
   resultDiv.innerHTML = `${convertToUp(computerChoice)} ${randomWin[randomNumber]} ${convertToUp(userChoice)}. You lose! ${loseEmojis[randomNumberEmoji]}`;
 
   document.getElementById(userChoice).classList.add('lose-border')
-  setTimeout(function(){document.getElementById(userChoice).classList.remove('lose-border')}, 600)
+  setTimeout(() => document.getElementById(userChoice).classList.remove('lose-border'), 600)
 
 };
 
@@ -72,7 +72,7 @@ const tie = (userChoice, computerChoice) => {
   resultDiv.innerHTML = `${convertToUp(computerChoice)} matches ${convertToUp(userChoice)}. It's a tie! ${tieEmojis[randomNumberEmoji]}`;
 
   document.getElementById(userChoice).classList.add('tie-border')
-  setTimeout(function(){document.getElementById(userChoice).classList.remove('tie-border')}, 600)
+  setTimeout(() => document.getElementById(userChoice).classList.remove('tie-border'), 600)
 };
 
 
@@ -108,17 +108,11 @@ const game = (userChoice) => {
 };
 
 const main = () => {
-  rockDiv.addEventListener('click', function()  {
-    game("rock");
-  });
+  rockDiv.addEventListener('click', () => game("rock"));
 
-  paperDiv.addEventListener('click', function(){
-    game("paper");
-  });
+  paperDiv.addEventListener('click', () => game("paper"));
 
-  scissorsDiv.addEventListener('click', function(){
-    game("scissors");
-  });
+  scissorsDiv.addEventListener('click', () => game("scissors"));
 };
 
 
