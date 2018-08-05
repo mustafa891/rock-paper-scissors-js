@@ -1,5 +1,10 @@
 # Rock Paper Scissors Game
-Rock paper Scissors game created using HTML, CSS and JavaScript.
 
-Codepen link:
+
+### Created using: ###
+- HTML
+- CSS
+- JavaScript.
+
+### Codepen: ###
 https://codepen.io/itsellej/full/oMyONQ/
