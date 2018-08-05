@@ -71,14 +71,17 @@ hr{
 
 #rock{
   background-color: #FFEE88;
+  box-shadow: 5px 7px 8px #888888;
 }
 
 #paper{
   background-color: #F40076;
+  box-shadow: 5px 7px 8px #888888;
 }
 
 #scissors{
   background-color: #75C9C8;
+  box-shadow: 5px 7px 8px #888888;
 }
 
 .result{
