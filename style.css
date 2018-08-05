@@ -103,12 +103,14 @@ hr{
 
 footer{
   font-size: 0.7rem;
-  line-height: 0.2rem;
+  line-height: 0.3rem;
+  padding-top: 2vh;
 }
 
 .icons{
   max-width: 20px;
   height: auto;
+  padding: 0 0.2vw;
 }
 
 
