@@ -104,14 +104,16 @@ hr{
 }
 
 .scores {
-  font-size: 1.7rem;
-  font-weight: 900;
-  /* margin: auto;
-  width: 30%;
-  height: 50%;
-  background-color: #e2e2e2;
+  background-color: #FE6E2E;
   border-radius: 25px;
-  padding: 2vh 0; */
+}
+
+.scores > p{
+  color: #FFFFFF;
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  margin: 0;
 }
 
 footer{
