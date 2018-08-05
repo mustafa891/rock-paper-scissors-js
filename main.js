@@ -41,7 +41,7 @@ const win = (userChoice, computerChoice) => {
   userScoreSpan.innerHTML = userScore;
   const randomWin = ["beats", "smashes", "destroys", "obliterates"];
   const randomNumber = Math.floor(Math.random() * 4);
-  const winEmojis = ["😁", "💃🏽", "👏🏽", "😅", "😎", ";🙌🏽"]
+  const winEmojis = ["😁", "💃🏽", "👏🏽", "😅", "😎", "🙌🏽"]
   const randomNumberEmoji = Math.floor(Math.random() * 6);
 
   resultDiv.innerHTML = `${convertToUp(userChoice)} ${randomWin[randomNumber]} ${convertToUp(computerChoice)}. You win! ${winEmojis[randomNumberEmoji]}`;
@@ -56,7 +56,7 @@ const lose = (userChoice, computerChoice) => {
   computerScoreSpan.innerHTML = computerScore;
   const randomWin = ["beats", "smashes", "destroys", "obliterates"];
   const randomNumber = Math.floor(Math.random() * 4);
-  const loseEmojis = ["😩", "😾", "💩", "😭", "😡", "🤨", "🤦🏽;‍♀️"]
+  const loseEmojis = ["😩", "😾", "💩", "😭", "😡", "🤨", "🤦🏽"]
   const randomNumberEmoji = Math.floor(Math.random() * 7);
   resultDiv.innerHTML = `${convertToUp(computerChoice)} ${randomWin[randomNumber]} ${convertToUp(userChoice)}. You lose! ${loseEmojis[randomNumberEmoji]}`;
 
