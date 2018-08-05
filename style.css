@@ -14,7 +14,7 @@ body{
 }
 
 .container{
-  padding: 2vh 10vh;
+  padding: 2vh 0;
 }
 
 #inside{
@@ -85,7 +85,7 @@ hr{
 }
 
 .result{
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
@@ -141,16 +141,7 @@ hr{
   margin: .2rem;
   outline: none;
 }
-/* #reset-button:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #ffffff));
-	background:-moz-linear-gradient(top, #ffffff 5%, #ffffff 100%);
-	background:-webkit-linear-gradient(top, #ffffff 5%, #ffffff 100%);
-	background:-o-linear-gradient(top, #ffffff 5%, #ffffff 100%);
-	background:-ms-linear-gradient(top, #ffffff 5%, #ffffff 100%);
-	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0);
-	background-color:#ffffff; */
-}
+
 #reset-button:active {
 	position:relative;
 	top:1px;
@@ -174,7 +165,7 @@ footer{
 @media (max-width: 1200px){
   #inside{
     width: 65%;
-    height: 65%;
+    /* height: 65%; */
   }
 }
 
@@ -182,7 +173,7 @@ footer{
 
   #inside{
     width: 70%;
-    height: 70%;
+    /* height: 70%; */
   }
 
   .img-weapon{
@@ -199,7 +190,7 @@ footer{
 @media (max-width: 768px){
   #inside{
     width: 80%;
-    height: 80%;
+    /* height: 80%; */
   }
 
   .img-weapon{
@@ -215,7 +206,7 @@ footer{
 @media (max-width: 576px){
   #inside{
     width: 90%;
-    height: 90%;
+    padding: 0;
   }
 
   h1 {
@@ -226,12 +217,8 @@ footer{
     font-size: 1.3rem;
   }
 
-  #message{
-    font size: 1.3rem;
-  }
-
   .scores > p{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .img-weapon{
