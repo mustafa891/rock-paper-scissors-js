@@ -14,7 +14,7 @@ body{
 }
 
 .container{
-  padding: 8vh 10vh;
+  padding: 2vh 10vh;
 }
 
 #inside{
@@ -29,7 +29,7 @@ body{
 
 h1{
   font-size: 3.2rem;
-  margin-top: -2vh;
+  margin: 1vh 0;
 }
 
 p{
@@ -216,6 +216,22 @@ footer{
   #inside{
     width: 90%;
     height: 90%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #instruction{
+    font-size: 1.3rem;
+  }
+
+  #message{
+    font size: 1.3rem;
+  }
+
+  .scores > p{
+    font-size: 1.3rem;
   }
 
   .img-weapon{
