@@ -5,6 +5,7 @@ const userScoreSpan = document.getElementById("user-score");
 const computerScoreSpan = document.getElementById("computer-score");
 const scoresDiv = document.querySelector(".scores");
 const resultDiv = document.querySelector(".result > p");
+const resetButton = document.getElementById("reset-button")
 
 const rockDiv = document.getElementById("rock");
 const paperDiv = document.getElementById("paper");
@@ -82,9 +83,6 @@ const tie = (userChoice, computerChoice) => {
 const game = (userChoice) => {
   const computerChoice = getComputerChoice();
 
-  // console.log(userChoice)
-  // console.log(computerChoice)
-
   switch (userChoice + computerChoice) {
     case "paperrock":
     case "rockscissors":
@@ -107,12 +105,22 @@ const game = (userChoice) => {
 
 };
 
+
+const resetScores = () => {
+  computerScore = 0;
+  computerScoreSpan.innerHTML = computerScore
+  userScore = 0;
+  userScoreSpan.innerHTML = userScore;
+};
+
 const main = () => {
   rockDiv.addEventListener('click', () => game("rock"));
 
   paperDiv.addEventListener('click', () => game("paper"));
 
   scissorsDiv.addEventListener('click', () => game("scissors"));
+
+  resetButton.addEventListener('click', () => resetScores());
 };
 
 
