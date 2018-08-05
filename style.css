@@ -19,9 +19,9 @@ body{
 
 #inside{
   margin: auto;
-  width: 50%;
+  width: 45%;
   height: 50%;
-  background-color: #e2e2e2;
+  /* background-color: #e2e2e2; */
   border-radius: 25px;
   padding: 2vh 0;
 }
@@ -60,23 +60,30 @@ hr{
   display: inline-block;
   border: 5px solid #000000;
   border-radius: 80px;
-  background-color: #fff500;
   margin: 1rem;
   transition: all 0.6s ease;
 }
 
-.select-choice:hover{
+#rock:hover, #paper:hover, #scissors:hover{
   background-color: #a6a6a6;
   cursor: pointer;
+}
+
+#rock{
+  background-color: #FFEE88;
+}
+
+#paper{
+  background-color: #F40076;
+}
+
+#scissors{
+  background-color: #75C9C8;
 }
 
 .result{
   font-size: 1.7rem;
   font-weight: 600;
-}
-
-.total-score{
-  line-height: 0.5rem;
 }
 
 
@@ -97,8 +104,14 @@ hr{
 }
 
 .scores {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 900;
+  /* margin: auto;
+  width: 30%;
+  height: 50%;
+  background-color: #e2e2e2;
+  border-radius: 25px;
+  padding: 2vh 0; */
 }
 
 footer{
