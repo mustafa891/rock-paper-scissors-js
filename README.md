@@ -1,5 +1,5 @@
 # Rock Paper Scissors Game
-
+A JavaScript game
 
 ### Created using: ###
 - HTML
