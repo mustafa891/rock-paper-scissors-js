@@ -22,17 +22,7 @@ const getComputerChoice = () => {
 
 // Convert lowercase choice to uppercase
 const convertToUp = (word) => {
-  switch(word) {
-    case "rock":
-      return "Rock";
-      break;
-    case "paper":
-      return "Paper";
-      break;
-    case "scissors":
-      return "Scissors";
-      break;
-  }
+   return word.charAt(0).toUpperCase() + word.slice(1);
 };
 
 
