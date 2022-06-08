@@ -11,6 +11,7 @@ const rockDiv = document.getElementById("rock");
 const paperDiv = document.getElementById("paper");
 const scissorsDiv = document.getElementById("scissors");
 
+const randomWin = ["beats", "smashes", "destroys", "obliterates"];
 
 // Generating computer choice at random
 const getComputerChoice = () => {
@@ -40,7 +41,6 @@ const convertToUp = (word) => {
 const win = (userChoice, computerChoice) => {
   userScore++;
   userScoreSpan.innerHTML = userScore;
-  const randomWin = ["beats", "smashes", "destroys", "obliterates"];
   const randomNumber = Math.floor(Math.random() * 4);
   const winEmojis = ["😁", "💃🏽", "👏🏽", "😅", "😎", "🙌🏽"]
   const randomNumberEmoji = Math.floor(Math.random() * 6);
@@ -55,7 +55,6 @@ const win = (userChoice, computerChoice) => {
 const lose = (userChoice, computerChoice) => {
   computerScore++;
   computerScoreSpan.innerHTML = computerScore;
-  const randomWin = ["beats", "smashes", "destroys", "obliterates"];
   const randomNumber = Math.floor(Math.random() * 4);
   const loseEmojis = ["😩", "😾", "💩", "😭", "😡", "🤨", "🤦🏽"]
   const randomNumberEmoji = Math.floor(Math.random() * 7);
